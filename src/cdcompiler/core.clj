@@ -3,7 +3,8 @@
   (:require [cdcompiler.constant :refer :all]
             [cdcompiler.verify :refer [verify]]
             [cdcompiler.version :refer [version]]
-            [cdcompiler.acc-flag :refer [acc-flag]])
+            [cdcompiler.acc-flag :refer [acc-flag]]
+            [cdcompiler.clz :refer :all])
   (:gen-class))
 
 
@@ -14,7 +15,8 @@
          verify
          version
          constant-pool
-         acc-flag)
+         acc-flag
+         clz-idx)
     ))
 
 

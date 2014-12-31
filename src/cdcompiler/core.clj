@@ -4,7 +4,10 @@
             [cdcompiler.verify :refer [verify]]
             [cdcompiler.version :refer [version]]
             [cdcompiler.acc-flag :refer [acc-flag]]
-            [cdcompiler.clz :refer :all])
+            [cdcompiler.clz :refer :all]
+            [cdcompiler.field :refer [field-info]]
+            [cdcompiler.method :refer [method-info]]
+            [cdcompiler.const-pool :refer :all])
   (:gen-class))
 
 
@@ -16,8 +19,15 @@
          version
          constant-pool
          acc-flag
-         clz-idx)
+         clz-idx
+;;          field-info
+;;          method-info
+         )
     ))
 
 
 (-main)
+
+(reset! pool {})
+(reset! idx 1)
+(get @pool 26)

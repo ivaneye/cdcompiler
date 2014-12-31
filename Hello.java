@@ -1,6 +1,7 @@
-import java.io.Serializable;
+public class Hello{
 
-public class Hello implements Serializable,Cloneable{
+  public int i = 1;
+
   public static void main(String[] args){
     System.out.println("Hi");
   }
